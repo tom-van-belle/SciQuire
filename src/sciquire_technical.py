@@ -1,13 +1,14 @@
 import streamlit as st
+from pathlib import Path
 
 # Page header
 container = st.container()
-col1, col2 = container.columns([1, 5])  # Adjust proportions of columns
-col1.image(r"assets\book-brain-logo.jpg", width=100)
-col2.subheader("SciQuire app: under the hood", divider="red")
+container.subheader("SciQuire app: under the hood", divider="red")
+container.image(r"assets\visual.webp", width=800)
 
+# read markdown content
+md_path = Path("src/README_SciQuire.md")
+content = md_path.read_text(encoding="utf-8")
 
-# ---------- LAYOUT ----------
-col_info, col_answer = st.columns([1, 5])
-col_answer.markdown("🚧 WORK IN PROGRESS 🚧")
-col_answer.image(r"assets\visual.webp", width=800)
+# display markdown
+container.markdown(content, unsafe_allow_html=True)

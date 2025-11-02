@@ -1,8 +1,8 @@
-# SciQuire, a scientific ChatBot!
-
 <p align="center">
-  <img src="assets/book-brain-logo.jpg" width="500" alt="Biomedical Abstract Screener">
+  <img src="assets/book-brain-logo.jpg" width="50" alt="Biomedical Abstract Screener">
 </p>
+
+# SciQuire, a scientific ChatBot!
 
 ### Short summary
 -------------------
@@ -25,7 +25,7 @@ SciQuire is a proof-of-concept small RAG (Retrieval-Augmented Generation) demo t
 
 ### Quick setup (Windows / PowerShell)
 ----------------------------------------
-Open PowerShell in the project root (`c:\Users\tom_v\AI_projects\SciQuire`) and run:
+Open PowerShell in the project root (`..\SciQuire`) and run:
 
 ```powershell
 # create a venv (if you don't have one)
@@ -38,7 +38,8 @@ pip install -r environment/requirements.txt
 
 ### Configuration — where to place API keys and credentials
 -------------------------------------------------------------
-When running it as it is, the app deploys locally and reads configuration and secrets from the `.streamlit/secrets.toml file. When deploying to Streamlit Cloud, define secrets in its web UI instead. 
+When running it as is, the app deploys locally and reads configuration and secrets from the `.streamlit/secrets.toml file.
+When deploying to Streamlit Cloud, you'll have to define the secrets in its web UI instead. 
 
 Local example:
 ```toml
@@ -56,9 +57,8 @@ Notes on secrets and safety
 
 ### Run application
 
-- From a PowerShell prompt in the project root and with your virtualenv active: run the streamlit application `streamlit run app.py`
-- This opens a local Streamlit server and a browser tab. Navigate in your browser to `http://localhost:8501`
-- The UI has two main flows:
--- Enter a scientific question and click "Get abstracts & quick answer" — this fetches PubMed abstracts, stores them locally, builds a vector index, and returns a quick answer.
--- "Chat with the abstracts" — pick a saved query and start a follow-up chat around that dataset.
+- Run the streamlit application `streamlit run app.py` (from a PowerShell prompt in the project root and with your virtualenv active)
+- This opens a local Streamlit server and a browser tab. Navigate in your browser to `http://localhost:8501` The UI has two main flows:
+    - Enter a scientific question and click "Get abstracts & quick answer" — this fetches PubMed abstracts, stores them locally, builds a vector index, and returns a quick answer.
+    - "Chat with the abstracts" — pick a saved query and start a follow-up chat around that dataset.
 - Have fun!

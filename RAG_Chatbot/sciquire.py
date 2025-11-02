@@ -53,6 +53,13 @@ st.sidebar.caption("###### Embeddings model:")
 st.sidebar.caption(f"{embeddings.model} ({embeddings.provider})")
 st.sidebar.write("---")
 
+st.sidebar.markdown("""
+---
+<div style="text-align: center;">
+    Built with ❤️ by <a href="https://www.linkedin.com/in/tom-van-belle/" target="_blank">Tom</a>
+</div>
+""", unsafe_allow_html=True)
+
 # ---------- PHASE 1: ASK A QUESTION ----------
 if get_articles and scientist_question and scientist_question != placeholder:
     with st.spinner("Fetching abstracts and generating answer..."):
