@@ -52,12 +52,6 @@ st.sidebar.caption(f"{llm.model_name} (from Groq)")
 st.sidebar.caption("###### Embeddings model:")
 st.sidebar.caption(f"{embeddings.model} ({embeddings.provider})")
 
-st.sidebar.markdown("""
----
-<div style="text-align: left;">
-    Built with ❤️ by <a href="https://www.linkedin.com/in/tom-van-belle/" target="_blank">Tom</a>
-</div>
-""", unsafe_allow_html=True)
 
 # ---------- PHASE 1: ASK A QUESTION ----------
 if get_articles and scientist_question and scientist_question != placeholder:
