@@ -4,7 +4,7 @@ from pathlib import Path
 # Page header
 container = st.container()
 container.subheader("SciQuire app: under the hood", divider="red")
-container.image(r"assets\visual.webp", width=800)
+container.image(r"assets\SciQuire_visual.png", width=800)
 
 # read markdown content
 md_path = Path("src/README_SciQuire.md")

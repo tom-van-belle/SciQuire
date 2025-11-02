@@ -19,18 +19,18 @@ def write():
             )
             st.write(
             """
-            This app is designed to assist researchers in their scientific inquiries.
-            """
-            )
-            st.write(
-            """
-            SciQuire: a chatbot that can retrieve relevant abstracts from PubMed biomedical literature and get answers to your scientific questions.
+            This suite is a working-in-progress that aims to assist researchers in their scientific inquiries.
             """
             )
             st.write(
                 """
                 Select an app from the sidebar to get started.
                 """
+            )
+            st.write(
+            """
+            **SciQuire**: a chatbot that can retrieve relevant abstracts from PubMed biomedical literature and get answers to your scientific questions.
+            """
             )
 
 write()

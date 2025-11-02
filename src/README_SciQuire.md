@@ -76,7 +76,8 @@
 
 #### Source material:
 
-Credits to Simona Barankova for the ![pubmed-rag-screener GitHub repo](https://github.com/milieere/pubmed-rag-screener) 
+❤️ Credits to Simona Barankova for the [pubmed-rag-screener GitHub repo](https://github.com/milieere/pubmed-rag-screener)
+Key components of the abstract retrieval, vector embedding, and RAG pipeline design in this project are adapted from her implementation.
 
 Part 1: Set up the Streamlit app with chatbot interface.
 https://medium.com/@milieere/build-a-rag-based-scientific-chatbot-with-langchain-streamlit-pubmed-part-1-set-up-streamlit-37550b44b266
