@@ -68,3 +68,10 @@ https://blog.gopenai.com/build-a-rag-based-scientific-chatbot-with-langchain-str
 │   └── pubmed-screener-logo.jpg
 └── environment
     └── requirements.txt
+
+Where to look next in the codebase
+----------------------------------
+- `RAG_Chatbot/components/chat_utils.py` — chat orchestration and the ChatAgent implementation.
+- `RAG_Chatbot/backend/rag_pipeline/` — RAG pipeline, embeddings and vector store adapter.
+- `RAG_Chatbot/backend/data_repository/` — local JSON store and models.
+- `RAG_Chatbot/components/llm.py` — where the LLM Runnable is configured.

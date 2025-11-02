@@ -79,8 +79,6 @@ if get_articles and scientist_question and scientist_question != placeholder:
             # Persist response to file 'query_answer.json' in the query folder
             data_repository.store_answer(query_id, resp.content)
 
-            st.write(resp.content)
-
 # ---------- PHASE 2: CHAT WITH ABSTRACTS ----------
 
 query_options = data_repository.get_list_of_queries()
